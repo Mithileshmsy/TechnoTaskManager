@@ -1,0 +1,98 @@
+﻿#homepage {
+    background-color: white;
+    margin:0px auto;
+    height:100%;
+    border-radius:5%;
+}
+    #homepage p {
+        line-height:32px;
+        text-align:center;
+    }
+#box {
+    width: 300px;
+    height: auto;
+    background: black;
+    text-align:center;
+    position:absolute;
+    right:-250px;
+    top:166px;
+    transition:right 1s;
+}
+    #box:hover {
+        right:0px;
+        transition:right 2s;
+    }
+#leftbox {
+    height: 285px;
+    width: 50px;
+    background: #2bbbad;
+    color: white;
+    float: left;
+    font-size:25px;
+    text-align:center;
+    padding-top:15px;
+    line-height:39px;
+    font-family:'Trajan Pro';
+}
+#rightbox{
+    height: 270px;
+    width: 220px;
+    background: black;
+    color: white;
+    font-family:'Monotype Corsiva';
+    float: left;
+    padding:15px;
+}
+.txt {
+    height:35px;
+    width:100%;
+    border:2px solid black;
+    margin-top:5px;
+
+}
+.txta {
+    height:70px;
+    width:100%;
+    border:2px solid solid;
+    margin-top:5px;
+
+}
+.btn {
+    
+    height:35px;
+    width:100%;
+    background:#2bbbad;
+    color:white;
+    border:2px solid;
+    margin-top:5px;
+    border:none;
+}
+#notification {
+            width:90%;
+            height:530px;
+            background:white;
+            margin:15px auto;
+            border-radius:10px;
+}
+#developer {
+    width:100px;
+    height:45px;
+    background:black;
+    color:white;
+    top:0px;
+    left:72px;
+    position:fixed;
+    text-align:center;
+    line-height:45px;
+    font-weight:bold;
+    transition:1s;
+    border-radius:15px;
+}
+#developer:hover {
+    width:100px;
+    height:45px;
+    background:#2bbbad;
+    color:white;
+    position:fixed;
+    transition:1s;
+}

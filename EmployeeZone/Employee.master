@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Employee.master.cs" Inherits="EmployeeZone_Employee" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="../css/employee.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../favicon.jpg" rel="icon" />
+    <style>
+            .txt {
+            width:91%;
+            height:30px;
+            padding:4px 10px;
+            margin:10px 5px;
+            border-radius:10px;
+        }
+        </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="outer">
+        <div id="top">
+            <div id="tleft">
+                Techno Task Manager Project EmployeeZone
+            </div>
+            <div id="tright">
+                Hi <asp:Label runat="server" ID="LblUser">
+                </asp:Label>
+            </div>
+        </div>
+        <div id="header">
+                <div id="logo">
+                    <img src="../images/logo2.png" height="120px" width="120px" />
+                </div>
+                <div id="sitetitle">
+                    Welcome To <b style="font-size:47px;color:#2bbbad">T</b>echnoTask <b style="font-size:47px;color:#2bbbad">M</b>anager
+                </div>
+            </div>
+        <div id="main">
+            <div id="left">
+                <div id="user">
+                    <div id="userpic">
+                        <asp:Image ID="userpicture" runat="server" Height="160px" Width="180px" />
+                    </div>
+                    <div class="picset">
+                        <a href="myprofile.aspx" style="">Edit Picture</a>
+                    </div>
+                    <div class="picset">
+                        <a href="myprofile.aspx" style="">View Profile</a>
+                    </div>
+                </div>
+                <div id="menu">
+                    <asp:Menu ID="listMenu" runat="server">
+                        <DynamicHoverStyle ForeColor="#2BBBAD" />
+                        <DynamicMenuItemStyle BackColor="#4C4C4C" BorderStyle="Outset" Font-Size="20px" ForeColor="White" Height="30px" HorizontalPadding="10px" Width="150px" />
+                        <Items>
+                            <asp:MenuItem Text="Profile" Value="Profile" NavigateUrl="~/EmployeeZone/myprofile.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/EmployeeZone/dashboard.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Discussion Board" Value="Discussion Board" NavigateUrl="~/EmployeeZone/discussionboard.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Complain" Value="Complain" NavigateUrl="~/EmployeeZone/complain.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Leave" Value="Leave" NavigateUrl="~/EmployeeZone/leave.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="FeedBack" Value="FeedBack" NavigateUrl="~/EmployeeZone/feedback.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Setting" Value="Setting">
+                                <asp:MenuItem Text="Profile" Value="Profile" NavigateUrl="~/EmployeeZone/myprofile.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Change Password" Value="Change Password" NavigateUrl="~/EmployeeZone/changepassword.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/EmployeeZone/logout.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle ForeColor="#2BBBAD" />
+                        <StaticMenuItemStyle BorderStyle="Outset" Font-Size="20px" ForeColor="White" Height="38px" HorizontalPadding="10px" Width="150px" BackColor="#4C4C4C" />
+                        <StaticMenuStyle Height="300px" />
+                    </asp:Menu>
+                </div>
+                
+            </div>
+            <div id="right">
+                <asp:ContentPlaceHolder ID="CHPMain" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footerp">
+                 &copy; Softpro India Computer Technologies (P) Ltd.
+            </div>
+            <div class="footerp">
+                Developed By : Er. Mithilesh Yadav
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

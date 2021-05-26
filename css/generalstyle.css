@@ -1,0 +1,156 @@
+﻿body {
+    
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+a {
+    color:white;
+}
+#outer {
+    height:auto;
+    width:1000px;
+    margin:0px auto;
+    border:1px solid;
+    position:relative;
+}
+#top {
+    height:45px;
+    width:1000px;
+    background-color:#2bbbad;
+}
+#top1 {
+    width:200px;
+    height:45px;
+    color:white;
+    text-align:center;
+    line-height:45px;
+    float:left;
+}
+#top span {
+    font-size:20px;
+}
+#top2 {
+    width:600px;
+    height:45px;
+    color:white;
+    text-align:center;
+    line-height:45px;
+    float:left;
+}
+#top3 {
+    width:200px;
+    height:45px;
+    color:white;
+    text-align:center;
+    line-height:45px;
+    float:left;
+}
+#header {
+    height:120px;
+    width:1000px;
+    border-bottom:10px solid #2bbbad;
+    background:white;
+}
+#logo {
+    height: 120px;
+    width: 120px;
+    float: left;
+}
+#sitetitle {
+    height: 120px;
+    width: 880px;
+    float: left;
+    font-size:45px;
+    text-align:center;
+    line-height:120px;
+   font-family:'Comic Sans MS';
+}
+#menu {
+    height: 45px;
+    width: 1000px;
+    background: black;
+}
+#main {
+    height: 560px;
+    width: 1000px;
+    background-color:#e6e7e8;
+}
+#left {
+   height: 530px;
+    width: 670px;
+    float:left;
+    padding:15px;
+    text-align:justify;
+}
+#right {
+    height: 560px;
+    width: 300px;
+    float:left;
+}
+#uright {
+    height: 150px;
+    width: 240px;
+    padding:10px 30px;
+}
+#lcontent1 {
+    height: 150px;
+    width: 240px;
+    background: white;
+    border-radius:5%;
+    box-shadow:2px 2px 10px #2bbbad;
+}
+#bright {
+    height: 310px;
+    width: 240px;
+     padding:10px 30px;
+}
+#lcontent2 {
+    height: 310px;
+    width: 240px;
+    background: white;
+    border-radius:5%;
+     box-shadow:2px 2px 10px #2bbbad;
+}
+#ufooter {
+    height: 200px;
+    width: 1000px;
+}
+.ufooterp {
+    height: 200px;
+    width: 293px;
+    background:#808080;
+    float:left;
+    padding:0px 20px;
+}
+#bfooter {
+    height: 50px;
+    width: 1000px;
+}
+.bfooterp {
+    height: 50px;
+    width: 500px;
+    float:left;
+    background:black;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+    line-height:50px;
+}
+.btnsubmit {
+            width:91%;
+            height:30px;
+            padding:4px 10px;
+            margin:10px 5px;
+            border-radius:10px;
+            background-color:#2bbbad;height:38px;width:97%;color:white;border:none;
+        }
+.btncancel {
+            width:91%;
+            height:30px;
+            padding:4px 10px;
+            margin:10px 5px;
+            border-radius:10px;
+            background-color:black;height:38px;width:97%;color:white;border:none;
+        }

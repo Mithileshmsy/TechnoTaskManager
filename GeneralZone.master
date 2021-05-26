@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GeneralZone.master.cs" Inherits="GeneralZone" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/generalstyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="favicon.jpg" rel="icon" />
+    <style>
+            .txt {
+            width:91%;
+            height:30px;
+            padding:4px 10px;
+            margin:10px 5px;
+            border-radius:10px;
+        }
+        </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="outer">
+            <div id="top">
+                <div id="top1">
+                    <span class="fa fa-mobile"></span> +918577885299
+                </div>
+                <div id="top2">
+                    We are very happy to Introduced You about Techno Task Manager
+                </div>
+                <div id="top3">
+                    <a href="www.facebook.com/mithileshmsy"><span class="fa fa-facebook"></span></a> 
+                    <span class="fa fa-twitter"></span> 
+                    <span class="fa fa-youtube"></span> 
+                    <span class="fa fa-linkedin"></span> 
+                </div>
+            </div>
+            <div id="header">
+                <div id="logo">
+                    <img src="images/logo2.png" height="120px" width="120px" />
+                </div>
+                <div id="sitetitle">
+                    Welcome To <b style="font-size:47px;color:#2bbbad">T</b>echnoTask <b style="font-size:47px;color:#2bbbad">M</b>anager
+                </div>
+            </div>
+            <div id="menu">
+                <asp:Menu ID="menu1" runat="server" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/default.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Team" Value="Team" NavigateUrl="~/team.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Employee Registration" Value="Employee Registration" NavigateUrl="~/empregistration.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Contact Us" Value="Contact Us" NavigateUrl="~/contactus.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Log In" Value="Log In" NavigateUrl="~/login.aspx"></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#2BBBAD" ForeColor="White" />
+                    <StaticMenuItemStyle Font-Size="Large" ForeColor="#2BBBAD" HorizontalPadding="50px" VerticalPadding="11px" />
+                    <StaticSelectedStyle BackColor="#2BBBAD" ForeColor="White" />
+                </asp:Menu>
+            </div>
+            <div id="main">
+                <div id="left">
+                    <asp:ContentPlaceHolder ID="CPHMain" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div id="right">
+                   <div id="uright">
+                       <div id="lcontent1">
+                           <h2 style="text-align:center;background:black;color:white;border-radius:10px 10px 0px 0px;min-height:45px;line-height:45px;">Total Register User</h2>
+                           <span style="font-size:50px;font-weight:bold;line-height:90px;">
+                               <asp:Label ID="LblTotal" runat="server" Text="Label"></asp:Label>
+                           </span>
+                       </div>
+                   </div>
+                    <div id="bright">
+                        <div id="lcontent2">
+                            <h2 style="text-align:center;background:black;color:white;border-radius:10px 10px 0px 0px;min-height:45px;line-height:45px;">Last 5 Register User</h2>
+                            <div style="text-align:center;font-size:30px;font-weight:bold;line-height:50px">
+                            <asp:Label ID="LblUser1" runat="server" ></asp:Label><br />
+                            <asp:Label ID="LblUser2" runat="server" ></asp:Label><br />
+                            <asp:Label ID="LblUser3" runat="server" ></asp:Label><br />
+                            <asp:Label ID="LblUser4" runat="server" ></asp:Label><br />
+                            <asp:Label ID="LblUser5" runat="server" ></asp:Label>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ufooter">
+                <div class="ufooterp">
+                    <br /><br />
+                    <h3>Social Websites</h3><br />
+				<a href="http://www.facebook.com"><img src="spi_logo\facebooknew.png"/></a>
+				<a href="http://www.twitter.com"><img src="spi_logo\twitternew.png"/></a>
+				<a href="http://www.linkedin.com"><img src="spi_logo\linkedinnew.png"/></a>
+				<a href="http://www.youtube.com"><img src="spi_logo\youtubenew.png"/></a>
+            </div>
+                <div class="ufooterp">
+                    <br /><br />
+                    <h3>Important Websites</h3><br />
+				<a href="www.softproindia.org">www.softproindia.org</a><br/>
+				<a href="www.bteup.ac.in">www.bteup.ac.in</a><br/>
+				<a href="www.naukari.com">www.naukari.com</a><br/>
+				<a href="www.sarakariresult.com">www.sarakariresult.com</a>
+                </div>
+                <div class="ufooterp">
+                    <br /><br />
+                    <h3>Address</h3><br />
+				<span style="color:white;">Near New Hanuman Temple,<br/>
+				Kpoorthala,Aliganj Lucknow-226024<br/>
+				Query Helpline No:7080102006/7</span>
+                </div>
+            </div>
+            <div id="bfooter">
+                <div class="bfooterp">
+                    &copy; Softpro India Computer Technologies (P) Ltd.
+                </div>
+                <div class="bfooterp">
+                    Developed By : Er. Mithilesh Yadav
+                </div>
+            </div>
+
+    </div>
+    </form>
+</body>
+</html>

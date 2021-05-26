@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="AdminZone_Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="../css/employee.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../favicon.jpg" rel="icon" />
+    <style>
+            .txt {
+            width:91%;
+            height:30px;
+            padding:4px 10px;
+            margin:10px 5px;
+            border-radius:10px;
+        }
+        </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="outer">
+        <div id="top">
+            <div id="tleft">
+                Techno Task Manager Project Admin Zone
+            </div>
+            <div id="tright">
+                Admin
+            </div>
+        </div>
+        <div id="header">
+                <div id="logo">
+                    <img src="../images/logo2.png" height="120px" width="120px" />
+                </div>
+                <div id="sitetitle">
+                    Welcome To <b style="font-size:47px;color:#2bbbad">A</b>dmin <b style="font-size:47px;color:#2bbbad">Z</b>one
+                </div>
+            </div>
+        <div id="main">
+            <div id="left">
+                <asp:Menu ID="Menu" runat="server">
+                    <DynamicHoverStyle ForeColor="#2BBBAD" />
+                    <DynamicMenuItemStyle BackColor="#4C4C4C" BorderStyle="Outset" Font-Size="20px" ForeColor="White" Height="38px" HorizontalPadding="30px" VerticalPadding="20px" Width="150px" />
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/AdminZone/dashboard.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Employee Mgmt" Value="Employee Mgmt" NavigateUrl="~/AdminZone/employeemgmt.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Work Allotment" Value="Work Allotment" NavigateUrl="~/AdminZone/workallotment.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Work Report" Value="Work Report" NavigateUrl="~/AdminZone/workreport.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Notification Mgmt" Value="Notification Mgmt" NavigateUrl="~/AdminZone/notificationmgmt.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Setting" Value="Setting">
+                            <asp:MenuItem Text="Change Password" Value="Change Password" NavigateUrl="~/AdminZone/changepassword.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Log Out" Value="Log Out" NavigateUrl="~/AdminZone/logout.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle ForeColor="#2BBBAD" />
+                    <StaticMenuItemStyle BackColor="#4C4C4C" BorderStyle="Outset" Font-Size="20px" ForeColor="White" Height="38px" HorizontalPadding="10px" VerticalPadding="20px" Width="180px" />
+                </asp:Menu>
+            </div>
+            <div id="right">
+                <asp:ContentPlaceHolder ID="CHPMain" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footerp">
+                &copy; Softpro India Computer Technologies (P) Ltd.
+            </div>
+            <div class="footerp">
+                Developed By : Er. Mithilesh Yadav
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
